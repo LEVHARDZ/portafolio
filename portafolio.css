@@ -1,0 +1,283 @@
+/*Globales*/
+*,
+*::before,
+*::after {
+    --blanco-texto: #ffffff;
+    --amarillo-texto: #eac102;
+    --azulOscuro-bkg: #040f1f;
+    box-sizing: border-box;
+}
+
+/* Fuente personalizada */
+@font-face {
+    font-family: "palafuente";
+    src: url("./fonts/pala.ttf") format('ttf'),
+        url("./fonts/palab.ttf") format('ttf'),
+        url("./fonts/palabi.ttf") format('ttf'),
+        url("./fonts/palai.ttf") format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.slide--menu {
+    display: none;
+}
+
+body {
+    font-family: "palafuente";
+    background-color: var(--azulOscuro-bkg);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--blanco-texto);
+}
+
+.allcontent {
+    display: flex;
+    width: 100%;
+}
+
+.content--main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.nombreSecciones {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.nombreSecciones--titulo {
+    color: var(--amarillo-texto);
+    font-size: 43px;
+    font-weight: lighter;
+}
+
+.nombreSecciones--bkg {
+    font-size: 63px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.nombreSecciones--img {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 80%;
+}
+
+/* Encabezado */
+.bkg--im {
+    display: block;
+    background: url("./imagenes/bkg_mobile.png") no-repeat;
+    background-size: cover;
+    min-height: 828px;
+}
+
+.brand {
+    margin: 5px;
+}
+
+/* introducción */
+.introduccion {
+    width: 80%;
+    font-size: 22px;
+}
+
+.introduccion--saludos {
+    margin-top: 73px;
+    font-size: 43px;
+}
+
+.miNombre {
+    color: var(--amarillo-texto);
+}
+
+.iconos {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+/* sobre mi */
+.sobremi--img {
+    width: 100%;
+}
+
+.sobremi--textcontent {
+    width: 63%;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.sobremi--hola {
+    font-size: 17px;
+}
+
+.resaltar--enunciado {
+    font-size: 17px;
+    color: var(--amarillo-texto);
+}
+
+.sobremi--info {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.iconos--cv {
+    width: 37px;
+}
+
+/* skills */
+
+/* formacion */
+.formacion--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.formacion--iconos p {
+    margin: 0;
+}
+
+.formacion--img {
+    width: 60%;
+}
+
+/* proyectos */
+.proyectos--proyectoName {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.proyectos--titulos {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyectos--img {
+    width: 100%;
+}
+
+.proyectos--botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.proyectos--botones button {
+    width: 162px;
+    height: 48px;
+    background: #36465d47;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.proyectos--botones__repo {
+    color: var(--blanco-texto);
+    font-size: 28px;
+}
+
+.proyectos--botones__demo {
+    color: var(--amarillo-texto);
+    font-size: 28px;
+}
+
+.proyectos--botones button:hover {
+    background-color: #3e3e3e;
+    cursor: pointer;
+}
+
+/* contacto */
+.contacto p {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.contacto--label input {
+    font:inherit;
+}
+
+.contacto--form {
+    width: min(320px, 80%)
+}
+
+.contacto--form__inputs{
+    display: grid;
+    gap: 18px;
+    color: var(--amarillo-texto);
+}
+
+.contacto--label{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "input";
+}
+
+.contacto--label__input{
+    grid-area: input;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #36465d47;
+    padding: .7rem 1.5rem;
+    background-color: var(--azulOscuro-bkg);
+}
+
+.contacto--label__text{
+    grid-area: input;
+    z-index: 100;
+    width: max-content;
+    height: 100%;
+    margin-left: 1rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    transform-origin: left center;
+    transition: .3s;
+}
+
+.contacto--label__input:focus + .contacto--label__text,
+.contacto--label__input:not(:placeholder-shown) + .contacto--label__text{
+    background-color: var(--azulOscuro-bkg);
+    border-radius: 20px;
+    height: 10px;
+    transform: translateY(-50%) scale(.9);
+}
+
+.contacto--label__input:focus-visible{
+    outline: none;
+}
+
+.contacto--boton {
+    width: 100px;
+    height: 30px;
+    background: #36465d47;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: var(--amarillo-texto);
+    font-size: 18px;
+    margin: 15px;
+}
+
+.contacto--boton:hover{
+    background-color: #3e3e3e;
+    cursor: pointer;
+}

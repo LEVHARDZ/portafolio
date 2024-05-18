@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./portafolio.css">
     <title>Luis Leal Portafolio</title>
 </head>
 
-<body>
-    <header>
-        <h1 class="brand"><img src="./imagenes/logo.png" alt="LEVHARDZ"></h1>
+<div class="allcontent">
+
+    <aside class="slide--menu">
         <nav class="navegacion">
             <ul>
                 <li>Sobre mi</li>
@@ -19,97 +21,148 @@
                 <li>Contacto</li>
             </ul>
         </nav>
-    </header>
+    </aside>
+    <div class="content--main">
 
-    <main>
-        <section class="introduccion">
-            <p>Saludos, mi nombre es <span class="mi nombre">Luis Leal</span></p>
-            <p>Soy alguien que al fin descubrió una de sus pasiones, convertirme en desarrollador web frontend,
-                actualmente estoy en proceso, y gracias a que soy participe del programa ONE de Alura latam, ahora estoy
-                más cerca de poder lograrlo.</p>
-            <div class="iconos">
-                <i class="iconos--linkedin"><img src="./imagenes/logo_linkedin.png" alt="linkedin"></i>
-                <i class="iconos--github"><img src="./imagenes/logo_github.png" alt="github"></i>
+        <body>
+            <div class="bkg--im">
+                <header>
+                    <h1 class="brand"><img src="./imagenes/logo.png" alt="LEVHARDZ"></h1>
+                </header>
+
+                <main>
+                    <section class="introduccion">
+                        <p class="introduccion--saludos">Saludos, mi nombre es <span class="miNombre">Luis Leal</span>
+                        </p>
+                        <p>Soy alguien que al fin descubrió una de sus pasiones, convertirme en desarrollador web
+                            frontend,
+                            actualmente estoy en proceso, y gracias a que soy participe del programa ONE de Alura latam,
+                            ahora
+                            estoy
+                            más cerca de poder lograrlo.</p>
+                        <div class="iconos">
+                            <i class="iconos--linkedin"><img src="./imagenes/logo_linkedin.png" alt="linkedin"></i>
+                            <i class="iconos--github"><img src="./imagenes/logo_github.png" alt="github"></i>
+                        </div>
+                    </section>
+                </main>
             </div>
-        </section>
-    </main>
 
-    <section class="sobremi">
-        <h2 class="sobremi--titulo">Sobre mi</h2>
-        <span class="sobremi--bkg">Sobre mi</span>
-        <div>
-            <img src="./imagenes/perfil_photo.png" alt="foto--perfil">
-        </div>
-        <div>
-            <p>Hola, Soy Luis Leal</p>
-            <p><span class="resaltar--enunciado">Administrador de contenido</span></p>
-            <p>Egresado de sistemas computacionales y actualmente llevando cursos de especialización para desarrollo web
-                (Frontend), busco oportunidades en areas donde pueda adquirir más experiencia. Gusto por idear nuevas
-                soluciones a las tareas cotidianas del día a día con la finalidad de eficientizar y optimizar el tiempo.
-            </p>
-            <p>Año de nacimiento: 15/05/1997</p>
-            <p>Sexo: Masculino</p>
-            <p>País de origen: México</p>
-            <p>Lenguajes: Español</p>
-            <p>E-mail: luiis_hdz.97@hotmail.com</p>
-            <i class="iconos--cv"><img src="./imagenes/cv_icon.png" alt="curriculim"></i>
-        </div>
-    </section>
+            <section class="sobremi">
+                <div class="nombreSecciones">
+                    <h2 class="nombreSecciones--titulo">Sobre mi</h2>
+                    <span class="nombreSecciones--bkg">Sobre mi</span>
+                </div>
+                <div class="nombreSecciones--img">
+                    <img class="sobremi--img" src="./imagenes/perfil_photo.png" alt="foto--perfil">
+                </div>
+                <div class="sobremi--textcontent">
+                    <p class="sobremi--hola">Hola, Soy Luis Leal</p>
+                    <p><span class="resaltar--enunciado">Administrador de contenido</span></p>
+                    <p>Egresado de sistemas computacionales y actualmente llevando cursos de especialización para
+                        desarrollo
+                        web
+                        (Frontend), busco oportunidades en areas donde pueda adquirir más experiencia. Gusto por idear
+                        nuevas
+                        soluciones a las tareas cotidianas del día a día con la finalidad de eficientizar y optimizar el
+                        tiempo.
+                    </p>
+                    <div class="sobremi--info">
+                        <p>Año de nacimiento: 15/05/1997</p>
+                        <p>Sexo: Masculino</p>
+                        <p>País de origen: México</p>
+                        <p>Lenguajes: Español</p>
+                        <p>E-mail: luiis_hdz.97@hotmail.com</p>
+                        <i><img class="iconos--cv" src="./imagenes/cv_icon.png" alt="curriculim"></i>
+                    </div>
+                </div>
+            </section>
 
-    <section class="skills">
-        <h2 class="skills--titulo">Skills</h2>
-        <span class="skills--bkg">Skills</span>
-        <div>
-            <img src="./imagenes/html5_icon.png" alt="html5">
-            <img src="./imagenes/css_icon.png" alt="css">
-            <img src="./imagenes/javascript_icon.png" alt="javascript">
-            <img src="./imagenes/vba_icon.png" alt="vba">
-        </div>
-    </section>
+            <section class="skills">
+                <div class="nombreSecciones">
+                    <h2 class="nombreSecciones--titulo">Skills</h2>
+                    <span class="nombreSecciones--bkg">Skills</span>
+                </div>
+                <div class="nombreSecciones--img">
+                    <img src="./imagenes/html5_icon.png" alt="html5">
+                    <img src="./imagenes/css_icon.png" alt="css">
+                    <img src="./imagenes/javascript_icon.png" alt="javascript">
+                    <img src="./imagenes/vba_icon.png" alt="vba">
+                </div>
+            </section>
 
-    <section class="formacion">
-        <h2 class="formacion--titulo">Formación</h2>
-        <span class="formacion--bkg">Formación</span>
-        <div class="formacion--iconos">
-            <img src="./imagenes/alura_icon.png" alt="alura">
-            <p>Formación en dearrollo web fontend</p>
-            <p>En curso</p>
-        </div>
-        <div class="formacion--iconos">
-            <img src="./imagenes/utel_icon.png" alt="utel">
-            <p>Lic. en Ingeniería en Sistemas Computacionales</p>
-            <p>2022 - UTEL</p>
-        </div>
-    </section>
+            <section class="formacion">
+                <div class="nombreSecciones">
+                    <h2 class="nombreSecciones--titulo">Formación</h2>
+                    <span class="nombreSecciones--bkg">Formación</span>
+                </div>
+                <div class="formacion--content">
+                    <div class="formacion--iconos">
+                        <img class="formacion--img" src="./imagenes/alura_icon.png" alt="alura">
+                        <p>Formación en dearrollo web fontend</p>
+                        <p>En curso</p>
+                    </div>
+                    <div class="formacion--iconos">
+                        <img class="formacion--img" src="./imagenes/utel_icon.png" alt="utel">
+                        <p>Lic. en Ingeniería en Sistemas Computacionales</p>
+                        <p>2022 - UTEL</p>
+                    </div>
+                </div>
+            </section>
 
-    <section class="proyectos">
-        <h2 class="proyectos--titulo">Proyectos</h2>
-        <span class="proyectos--bkg">Proyectos</span>
-        <p>Encriptador de textos</p>
-        <p>Challenge Oracle</p>
-        <img src="./imagenes/challenge_encriptador_screen.png" alt="alura">
-        <div>
-            <button>Repositorio</button>
-            <button>Ver Demo</button>
-        </div>
-    </section>
+            <section class="proyectos">
+                <div class="nombreSecciones">
+                    <span class="nombreSecciones--bkg">Proyectos</span>
+                    <h2 class="nombreSecciones--titulo">Proyectos</h2>
+                </div>
+                <p class="proyectos--titulos">Encriptador de textos</p>
+                <p class="proyectos--proyectoName">Challenge Oracle</p>
+                <div class="nombreSecciones--img">
+                    <img class="proyectos--img" src="./imagenes/challenge_encriptador_screen.png" alt="alura">
+                </div>
+                <div class="proyectos--botones">
+                    <button class="proyectos--botones__repo">Repositorio</button>
+                    <button class="proyectos--botones__demo">Ver Demo</button>
+                </div>
+            </section>
 
-    </section class="contacto">
-    <h2 class="contacto--titulo">Contacto</h2>
-    <span class="contacto--bkg">Contacto</span>
-    <p>¿Le gustaría contactarme?</p>
-    <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-    <div class="contacto--form">
-        <input type="text" placeholder="Nombre">
-        <input type="email" placeholder="E-mail">
-        <input type="text" placeholder="Asunto">
-        <textarea name="mensaje" id="msj" placeholder="Mensaje"></textarea>
+            <section class="contacto">
+                <div class="nombreSecciones">
+                    <span class="nombreSecciones--bkg">Contacto</span>
+                    <h2 class="nombreSecciones--titulo">Contacto</h2>
+                </div>
+                <p>¿Le gustaría contactarme?</p>
+                <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                <form class="contacto--form">
+                    <div class="contacto--form__inputs">
+                        <label class="contacto--label">
+                            <input class="contacto--label__input" type="text" placeholder=" ">
+                            <span class="contacto--label__text">Nombre</span>
+                        </label>
+                        <label class="contacto--label">
+                            <input class="contacto--label__input" type="email" placeholder=" ">
+                            <span class="contacto--label__text">E-mail</span>
+                        </label>
+                        <label class="contacto--label">
+                            <input class="contacto--label__input" type="text" placeholder=" ">
+                            <span class="contacto--label__text">Asunto</span>
+                        </label>
+                        <label class="contacto--label">
+                            <textarea class="contacto--label__input" name="mensaje" id="msj" placeholder=" "></textarea>
+                            <span class="contacto--label__text">Mensaje</span>
+                        </label>
+
+                    </div>
+                    <input class="contacto--boton" type="submit" value="Enviar">
+                </form>
+            </section>
+
+        </body>
+
+        <footer>
+            <p>Desarrollado por Luis Leal<br>2024</p>
+        </footer>
     </div>
-    <button>Enviar</button>
-    <section>
-
-</body>
-
-<footer>Desarrollado por Luis Leal 2024</footer>
+</div>
 
 </html>
