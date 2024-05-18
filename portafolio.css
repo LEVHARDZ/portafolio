@@ -206,32 +206,61 @@ body {
 }
 
 /* contacto */
+.form--container {
+    width: min(320px, 100%);
+    height: min(330px, 50%);
+    margin: 36px 0;
+    padding: 14px;
+    background: linear-gradient(#040f1f, #040f1f) padding-box,
+        linear-gradient(145deg, transparent 35%, #eac102, #fffdf6) border-box;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .contacto p {
     font-size: 30px;
     margin-top: 0;
 }
 
 .contacto--label input {
-    font:inherit;
+    font: inherit;
+    color: var(--blanco-texto);
 }
 
 .contacto--form {
     width: min(320px, 80%)
 }
 
-.contacto--form__inputs{
+.contacto--form__inputs {
     display: grid;
     gap: 18px;
     color: var(--amarillo-texto);
 }
 
-.contacto--label{
+.contacto--label {
     width: 100%;
     display: grid;
     grid-template-areas: "input";
 }
 
-.contacto--label__input{
+.contacto--label__input {
     grid-area: input;
     width: 100%;
     border-radius: 20px;
@@ -240,7 +269,7 @@ body {
     background-color: var(--azulOscuro-bkg);
 }
 
-.contacto--label__text{
+.contacto--label__text {
     grid-area: input;
     z-index: 100;
     width: max-content;
@@ -253,16 +282,18 @@ body {
     transition: .3s;
 }
 
-.contacto--label__input:focus + .contacto--label__text,
-.contacto--label__input:not(:placeholder-shown) + .contacto--label__text{
+.contacto--label__input:focus+.contacto--label__text,
+.contacto--label__input:not(:placeholder-shown)+.contacto--label__text {
     background-color: var(--azulOscuro-bkg);
     border-radius: 20px;
     height: 10px;
     transform: translateY(-50%) scale(.9);
 }
 
-.contacto--label__input:focus-visible{
+.contacto--label__input:focus-visible {
     outline: none;
+    border-color: var(--amarillo-texto);
+    background-color: #36465d47;
 }
 
 .contacto--boton {
@@ -277,7 +308,7 @@ body {
     margin: 15px;
 }
 
-.contacto--boton:hover{
+.contacto--boton:hover {
     background-color: #3e3e3e;
     cursor: pointer;
 }
