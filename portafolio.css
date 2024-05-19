@@ -19,16 +19,84 @@
     font-style: normal;
 }
 
-.slide--menu {
-    display: none;
-}
-
 body {
     font-family: "palafuente";
     background-color: var(--azulOscuro-bkg);
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    color: var(--blanco-texto);
+}
+
+.slide--menu {
+    transform: translateX(-100%);
+
+}
+
+.slide--menu__estilos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background: url("./imagenes/bkg_mobile.png") no-repeat;
+    background-size: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide--menu__estilos img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.toggleOne {
+    width: min(768px, 11%);
+    position: absolute;
+    z-index: 200;
+    right: 2%;
+    top: 1%;
+    cursor: pointer;
+}
+
+.toggleOne:hover {
+    color: var(--azulOscuro-bkg);
+    opacity: 0.5;
+    transition-property: color;
+    transition-duration: 0.9s;
+    transition-delay: 0.1s;
+}
+
+.navegacion {
+    width: 100%;
+}
+
+.navegacion--ul {
+    list-style: none;
+    padding-left: 0px;
+    line-height: 90px;
+    font-size: 32px;
+}
+
+.navegacion--ul li:hover {
+    background: linear-gradient(var(--azulOscuro-bkg), var(--azulOscuro-bkg)) padding-box,
+        linear-gradient(145deg, transparent 35%, #eac102, #fffdf6) border-box;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    transform: scale(1.0);
+}
+
+.navegacion--ul li a:hover {
+    text-decoration: none;
+    color: var(--amarillo-texto);
+}
+
+.navegacion--ul li a {
+    text-decoration: none;
     color: var(--blanco-texto);
 }
 
@@ -81,6 +149,41 @@ body {
     background: url("./imagenes/bkg_mobile.png") no-repeat;
     background-size: cover;
     min-height: 828px;
+}
+
+.toggleTwo {
+    width: min(768px, 11%);
+    position: absolute;
+    z-index: 200;
+    right: 2%;
+    top: 1%;
+    cursor: pointer;
+}
+
+.toggleTwo:hover {
+    color: var(--amarillo-texto);
+    transition-property: color;
+    transition-duration: 0.9s;
+    transition-delay: 0.1s;
+}
+
+.upTo {
+    width: min(768px, 11%);
+    position: fixed;
+    z-index: 200;
+    right: 0%;
+    top: 95%;
+    color: var(--blanco-texto);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.upTo:hover {
+    color: var(--blanco-texto);
+    opacity: 1;
+    transition-property: color;
+    transition-duration: 0.9s;
+    transition-delay: 0.1s;
 }
 
 .brand {
@@ -222,17 +325,17 @@ body {
 
 @keyframes gradient {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
-  
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}
 
 .contacto p {
     font-size: 30px;

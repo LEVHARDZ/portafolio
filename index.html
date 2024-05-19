@@ -9,23 +9,38 @@
     <title>Luis Leal Portafolio</title>
 </head>
 
-<div class="allcontent">
-
-    <aside class="slide--menu">
-        <nav class="navegacion">
-            <ul>
-                <li>Sobre mi</li>
-                <li>Skills</li>
-                <li>Formación</li>
-                <li>Proyectos</li>
-                <li>Contacto</li>
-            </ul>
-        </nav>
-    </aside>
-    <div class="content--main">
-
-        <body>
+<body>
+    <div class="allcontent">
+        <aside class="slide--menu slide--menu__estilos">
+            <svg class="toggleOne" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+            <img src="./imagenes/logo.png" alt="LEVHARDZ">
+            <nav class="navegacion">
+                <ul class="navegacion--ul">
+                    <li><a href="#sobremiID">Sobre mi</a></li>
+                    <li><a href="#skillsID">Skills</a></li>
+                    <li><a href="#formacionID">Formación</a></li>
+                    <li><a href="#proyectosID">Proyectos</a></li>
+                    <li><a href="#contactoID">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content--main" id="initID">
             <div class="bkg--im">
+                <svg class="toggleTwo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <a href="#initID">
+                    <svg class="upTo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </a>
                 <header>
                     <h1 class="brand"><img src="./imagenes/logo.png" alt="LEVHARDZ"></h1>
                 </header>
@@ -41,14 +56,16 @@
                             estoy
                             más cerca de poder lograrlo.</p>
                         <div class="iconos">
-                            <i class="iconos--linkedin"><img src="./imagenes/logo_linkedin.png" alt="linkedin"></i>
-                            <i class="iconos--github"><img src="./imagenes/logo_github.png" alt="github"></i>
+                            <i class="iconos--linkedin"><a href="https://www.linkedin.com/in/luis-eduardo-leal-hern%C3%A1ndez-b86a21245/" target="_blank" rel="noopener noreferrer">
+                                <img src="./imagenes/logo_linkedin.png" alt="linkedin">
+                            </a></i>
+                            <i class="iconos--github"><a href="https://github.com/LEVHARDZ" target="_blank" rel="noopener noreferrer"><img src="./imagenes/logo_github.png" alt="github"></a></i>
                         </div>
                     </section>
                 </main>
             </div>
 
-            <section class="sobremi">
+            <section class="sobremi" id="sobremiID">
                 <div class="nombreSecciones">
                     <h2 class="nombreSecciones--titulo">Sobre mi</h2>
                     <span class="nombreSecciones--bkg">Sobre mi</span>
@@ -73,12 +90,14 @@
                         <p>País de origen: México</p>
                         <p>Lenguajes: Español</p>
                         <p>E-mail: luiis_hdz.97@hotmail.com</p>
-                        <i><img class="iconos--cv" src="./imagenes/cv_icon.png" alt="curriculim"></i>
+                        <i><a href="#">
+                            <img class="iconos--cv" src="./imagenes/cv_icon.png" alt="curriculim">
+                        </a></i>
                     </div>
                 </div>
             </section>
 
-            <section class="skills">
+            <section class="skills" id="skillsID">
                 <div class="nombreSecciones">
                     <h2 class="nombreSecciones--titulo">Skills</h2>
                     <span class="nombreSecciones--bkg">Skills</span>
@@ -91,26 +110,30 @@
                 </div>
             </section>
 
-            <section class="formacion">
+            <section class="formacion" id="formacionID">
                 <div class="nombreSecciones">
                     <h2 class="nombreSecciones--titulo">Formación</h2>
                     <span class="nombreSecciones--bkg">Formación</span>
                 </div>
                 <div class="formacion--content">
                     <div class="formacion--iconos">
-                        <img class="formacion--img" src="./imagenes/alura_icon.png" alt="alura">
+                        <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="formacion--img" src="./imagenes/alura_icon.png" alt="alura">
+                        </a>
                         <p>Formación en dearrollo web fontend</p>
                         <p>En curso</p>
                     </div>
                     <div class="formacion--iconos">
-                        <img class="formacion--img" src="./imagenes/utel_icon.png" alt="utel">
+                        <a href="https://utel.edu.mx/" target="_blank" rel="noopener noreferrer">
+                            <img class="formacion--img" src="./imagenes/utel_icon.png" alt="utel">
+                        </a>
                         <p>Lic. en Ingeniería en Sistemas Computacionales</p>
                         <p>2022 - UTEL</p>
                     </div>
                 </div>
             </section>
 
-            <section class="proyectos">
+            <section class="proyectos" id="proyectosID">
                 <div class="nombreSecciones">
                     <span class="nombreSecciones--bkg">Proyectos</span>
                     <h2 class="nombreSecciones--titulo">Proyectos</h2>
@@ -121,12 +144,16 @@
                     <img class="proyectos--img" src="./imagenes/challenge_encriptador_screen.png" alt="alura">
                 </div>
                 <div class="proyectos--botones">
-                    <button class="proyectos--botones__repo">Repositorio</button>
-                    <button class="proyectos--botones__demo">Ver Demo</button>
+                    <a href="https://github.com/LEVHARDZ/encriptador-alura" target="_blank" rel="noopener noreferrer">
+                        <button class="proyectos--botones__repo">Repositorio</button>
+                    </a>
+                    <a href="https://levhardz.github.io/encriptador-alura/" target="_blank" rel="noopener noreferrer">
+                        <button class="proyectos--botones__demo">Ver Demo</button>
+                    </a>
                 </div>
             </section>
 
-            <section class="contacto">
+            <section class="contacto" id="contactoID">
                 <div class="nombreSecciones">
                     <span class="nombreSecciones--bkg">Contacto</span>
                     <h2 class="nombreSecciones--titulo">Contacto</h2>
@@ -159,13 +186,13 @@
                     </form>
                 </div>
             </section>
-
-        </body>
-
-        <footer>
-            <p>Desarrollado por Luis Leal<br>2024</p>
-        </footer>
+        </div>
     </div>
-</div>
+    <script src="./main.js"></script>
+</body>
+
+<footer>
+    <p>Desarrollado por Luis Leal<br>2024</p>
+</footer>
 
 </html>
