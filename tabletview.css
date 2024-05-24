@@ -1,0 +1,150 @@
+@media (min-width: 768px) {
+
+    .nombreSecciones--img {
+        width: 65%;
+    }
+    
+    .toggleOne {
+        width: min(768px, 8%);
+    }
+
+    .slide--menu__estilos img {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .navegacion--ul {
+        line-height: 160px;
+        font-size: 55px;
+        margin-top: 10px;
+    }
+
+    .bkg--im {
+        background: url("./imagenes/bkg_tablet.png") no-repeat;
+    }
+
+    .toggleTwo {
+        width: min(768px, 8%);
+    }
+
+    .upTo {
+        width: min(768px, 8%);
+    }
+
+    .brand {
+        margin-top: 18px;
+    }
+
+    .introduccion--saludos {
+        font-size: 56px;
+    }
+
+    .introduccion--saludos__pdos {
+        font-size: 31px;
+    }
+
+    .sobremi--textcontent {
+        font-size: 24px;
+    }
+
+    .sobremi--hola {
+        font-size: 26px;
+    }
+
+    .resaltar--enunciado {
+        font-size: 26px;
+    }
+
+    .sobremi--info {
+        font-size: 24px;
+    }
+
+    .iconos--cv {
+        width: 55px;
+    }
+
+    .nombreSecciones--img_skills {
+        display: grid;
+        gap: 35px;
+        grid-template-columns: repeat(2, 2fr);
+        width: 80%;
+        justify-content: center;
+    }
+
+    .formacion--content {
+        gap: 58px;
+        font-size: 30px;
+    }
+
+    .formacion--img {
+        width: 35%;
+    }
+
+    .nombreSecciones--img_proyectos {
+        width: 90%;
+    }
+
+    .proyectos--botones {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        width: 65%;
+        margin-top: 60px;
+    }
+
+    .proyectos--botones button {
+        width: 227px;
+        height: 60px;
+        font-size: 38px;
+    }
+
+    .contacto {
+        height: 1200px;
+    }
+
+    .form--container {
+        width: min(768px, 90%);
+        height: min(740px, 100%);
+    }
+
+    .contacto p {
+        font-size: 39px;
+        width: 80%;
+    }
+
+    .contacto--form {
+        width: min(660px, 90%);
+        margin-top: 30px;
+    }
+
+    .contacto--form__inputs {
+        height: 465px;
+    }
+
+    .contacto--label {
+        height: 90px;
+    }
+
+    .contacto--label__textarea {
+        height: 250px;
+    }
+
+    .contacto--label__text {
+        font-size: 30px;
+    }
+
+    .contacto--label__textMensaje {
+        height: 24%;
+    }
+
+    .contacto--label__input {
+        font-size: 30px;
+    }
+
+    .contacto--boton {
+        width: 200px;
+        height: 68px;
+        font-size: 30px;
+        margin-top: 135px;
+    }
+
+  }

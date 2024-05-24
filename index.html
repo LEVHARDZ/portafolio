@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./portafolio.css">
+    <link rel="stylesheet" href="./tabletview.css">
     <title>Luis Leal Portafolio</title>
 </head>
 
@@ -49,7 +50,7 @@
                     <section class="introduccion">
                         <p class="introduccion--saludos">Saludos, mi nombre es <span class="miNombre">Luis Leal</span>
                         </p>
-                        <p>Soy alguien que al fin descubrió una de sus pasiones, convertirme en desarrollador web
+                        <p class="introduccion--saludos__pdos">Soy alguien que al fin descubrió una de sus pasiones, convertirme en desarrollador web
                             frontend,
                             actualmente estoy en proceso, y gracias a que soy participe del programa ONE de Alura latam,
                             ahora
@@ -102,7 +103,7 @@
                     <h2 class="nombreSecciones--titulo">Skills</h2>
                     <span class="nombreSecciones--bkg">Skills</span>
                 </div>
-                <div class="nombreSecciones--img">
+                <div class="nombreSecciones--img nombreSecciones--img_skills">
                     <img src="./imagenes/html5_icon.png" alt="html5">
                     <img src="./imagenes/css_icon.png" alt="css">
                     <img src="./imagenes/javascript_icon.png" alt="javascript">
@@ -140,7 +141,7 @@
                 </div>
                 <p class="proyectos--titulos">Encriptador de textos</p>
                 <p class="proyectos--proyectoName">Challenge Oracle</p>
-                <div class="nombreSecciones--img">
+                <div class="nombreSecciones--img nombreSecciones--img_proyectos">
                     <img class="proyectos--img" src="./imagenes/challenge_encriptador_screen.png" alt="alura">
                 </div>
                 <div class="proyectos--botones">
@@ -175,10 +176,10 @@
                                 <input class="contacto--label__input" type="text" placeholder=" ">
                                 <span class="contacto--label__text">Asunto</span>
                             </label>
-                            <label class="contacto--label">
+                            <label class="contacto--label contacto--label__textarea">
                                 <textarea class="contacto--label__input" name="mensaje" id="msj"
                                     placeholder=" "></textarea>
-                                <span class="contacto--label__text">Mensaje</span>
+                                <span class="contacto--label__text contacto--label__textMensaje">Mensaje</span>
                             </label>
 
                         </div>
