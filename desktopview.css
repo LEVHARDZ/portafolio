@@ -1,0 +1,139 @@
+@media (min-width: 769px) {
+    
+    .toggleTwo {
+        display: none;
+    }
+
+    .bkg--im {
+        background: url("./imagenes/bkg_desktop.png") no-repeat;
+    }
+
+    .upTo {
+        width: min(768px, 8%);
+        top: 91%;
+    }
+
+    .brand {
+        position: relative;
+        width: fit-content;
+        right: 38%;
+    }
+
+
+    .introduccion {
+        width: 78%;
+        font-size: 29px;
+    }
+
+    .introduccion--saludos {
+        margin: 112px 0 44px 0;
+        font-size: 78px;
+    }
+
+    .about_me--content {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .nombreSecciones--img {
+        width: 30%;
+    }
+
+    .sobremi--textcontent {
+        width: 32%;
+        font-size: 23px;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .sobremi--hola {
+        font-size: 22px;
+    }
+
+    .sobremi--parrafo {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .resaltar--enunciado {
+        font-size: 22px;
+    }
+
+    .sobremi--info {
+        font-size: 20px;
+    }
+
+    .sobremi--info i {
+        position: relative;
+        left: 20%;
+    }
+
+    .nombreSecciones--img_skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90% !important;
+    }
+
+    .nombreSecciones--img_skills img {
+        width: 22%;
+    }
+
+    .formacion--content {
+        flex-direction: row;
+        font-size: 35px;
+        gap: 120px;
+    }
+
+    .formacion--iconos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formacion--img__utel {
+        margin: 42px 0;
+    }
+
+    .proyectos--content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 80%;
+        column-gap: 30px
+    }
+
+    .proyectos--titulos {
+        align-content: end;
+    }
+
+    .proyectos--proyectoName {
+        grid-row: 2 / 3;
+    }
+
+    .nombreSecciones--img_proyectos {
+        grid-column: 2 / 2;
+        grid-row: 1 / span3;
+        width: 100%;
+    }
+
+    .proyectos--botones {
+        grid-row: 3 / 3;
+        position: relative;
+        bottom: 95%;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 2560px) {
+    .bkg--im {
+        background-size: cover;
+        background-position-y: center;
+    }
+
+    .upTo {
+        width: min(768px, 6%);
+        top: 91%;
+    }
+}

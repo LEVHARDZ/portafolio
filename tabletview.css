@@ -29,6 +29,7 @@
 
     .upTo {
         width: min(768px, 8%);
+        top: 93%;
     }
 
     .brand {
