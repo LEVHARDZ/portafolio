@@ -149,3 +149,10 @@
     }
 
   }
+
+  @media (min-width: 932px) {
+    .upTo {
+        width: min(768px, 6%);
+        top: 86%;
+    }
+}

@@ -9,6 +9,7 @@
 }
 
 /* Fuente personalizada */
+
 @font-face {
     font-family: "palafuente";
     src: url("./fonts/pala.ttf") format('ttf'),
@@ -20,7 +21,7 @@
 }
 
 body {
-    font-family: "palafuente";
+    font-family: "palafuente", "Lora";
     background-color: var(--azulOscuro-bkg);
     width: 100%;
     box-sizing: border-box;
@@ -90,12 +91,12 @@ body {
     transform: scale(1.0);
 }
 
-.navegacion--ul li a:hover {
+.navegacion--ul a:hover {
     text-decoration: none;
     color: var(--amarillo-texto);
 }
 
-.navegacion--ul li a {
+.navegacion--ul a {
     text-decoration: none;
     color: var(--blanco-texto);
 }
@@ -415,4 +416,11 @@ body {
 .contacto--boton:hover {
     background-color: #3e3e3e;
     cursor: pointer;
+}
+
+@media (min-width: 667px) {
+    .upTo {
+        width: min(768px, 7%);
+        top: 88%;
+    }
 }

@@ -19,7 +19,7 @@
 
     .upTo {
         width: min(768px, 8%);
-        top: 91%;
+        top: 89%;
     }
 
     .brand {
@@ -106,17 +106,24 @@
 
     .formacion--content {
         flex-direction: row;
-        font-size: 35px;
-        gap: 120px;
+        font-size: 22px;
+        gap: 106px;
     }
 
     .formacion--iconos {
         display: flex;
         flex-direction: column;
+        align-self: baseline;
+    }
+
+    .formacion--img {
+        width: 35%;
+        margin: 22px 0;
     }
 
     .formacion--img__utel {
-        margin: 42px 0;
+        margin: 38px 0;
+        width: 43%;
     }
 
     .proyectos--content {
@@ -156,6 +163,13 @@
     }
 }
 
+@media (min-width: 769px) {
+
+    header {
+        gap: 0%;
+    }
+}
+
 @media (min-width: 1441px) {
     .bkg--im {
         background-size: cover;
@@ -165,5 +179,10 @@
     .upTo {
         width: min(768px, 6%);
         top: 89%;
+    }
+
+    .proyectos--botones button {
+        width: 90%;
+        font-size: 33px;
     }
 }
