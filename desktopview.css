@@ -1,5 +1,10 @@
 @media (min-width: 769px) {
-    
+
+    header {
+        display: flex;
+        gap: 25%;
+    }
+
     .toggleTwo {
         display: none;
     }
@@ -8,17 +13,36 @@
         background: url("./imagenes/bkg_desktop.png") no-repeat;
     }
 
+    .toggleTwo {
+        display: none !important;
+    }
+
     .upTo {
         width: min(768px, 8%);
         top: 91%;
     }
 
     .brand {
-        position: relative;
-        width: fit-content;
-        right: 38%;
+        width: 48%;
     }
 
+    .navegacion {
+        width: 100%;
+    }
+
+    .navegacion ul {
+        display: flex;
+        font-size: 21px;
+        gap: 5%;
+        justify-content: center;
+        position: relative;
+        bottom: 29%;
+    }
+
+    .navegacion--ul li:hover {
+        background: none;
+        border: none;
+    }
 
     .introduccion {
         width: 78%;
@@ -123,10 +147,16 @@
         bottom: 95%;
         flex-direction: row;
         justify-content: center;
+        width: 100%;
+    }
+
+    .proyectos--botones button {
+        width: 168px;
+        font-size: 31px;
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 1441px) {
     .bkg--im {
         background-size: cover;
         background-position-y: center;
@@ -134,6 +164,6 @@
 
     .upTo {
         width: min(768px, 6%);
-        top: 91%;
+        top: 89%;
     }
 }
